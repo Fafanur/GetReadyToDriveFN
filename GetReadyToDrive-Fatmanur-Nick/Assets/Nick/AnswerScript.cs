@@ -12,12 +12,12 @@ public class AnswerScript : MonoBehaviour
    
 		if(isCorrect)
 		{
-			Debug.log("Goede Antwoord");
+			Debug.Log("Goede Antwoord");
 			quizManager.correct();
 		}
 		else
 		{
-			Debug.log("foute Antwoord");
+			Debug.Log("foute Antwoord");
 			quizManager.correct();
 		}
    }
