@@ -43,8 +43,6 @@ public class QuizManager : MonoBehaviour
     currentQuestion = Random.Range(0, QnA.Count);
 
     QuestionTxt.text = QnA[currentQuestion].Question;
-
-    QnA.RemoveAt(currentQuestion);
     
     SetAnswers();
     
