@@ -12,6 +12,8 @@ public class QuizManager : MonoBehaviour
     
     public GameObject Quizpanel;
     public GameObject GoPanel;
+    public GameObject Geslaagd;
+    public GameObject Gezakt;
 
     public Text QuestionTxt;
     public Text ScoreTxt;
@@ -25,6 +27,7 @@ public class QuizManager : MonoBehaviour
         TotalQuestions = QnA.Count;
         GoPanel.SetActive(false);
         generateQuestion();
+       
 
 	}
 
@@ -37,8 +40,16 @@ public class QuizManager : MonoBehaviour
     {
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
+        Geslaagd.SetActive(false);
+        Gezakt.SetActive(false);
         ScoreTxt.text = score + "/" + TotalQuestions;
-        
+        if (score > 15)
+        {
+        Geslaagd.SetActive(true);
+        }
+        else
+        {
+        Gezakt.SetActive(true);}
         
     }
 
