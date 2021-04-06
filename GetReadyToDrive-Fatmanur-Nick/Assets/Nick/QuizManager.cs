@@ -43,7 +43,7 @@ public class QuizManager : MonoBehaviour
         Geslaagd.SetActive(false);
         Gezakt.SetActive(false);
         ScoreTxt.text = score + "/" + TotalQuestions;
-        if (score > 15)
+        if (score > 8)
         {
         Geslaagd.SetActive(true);
         }
